@@ -4,20 +4,15 @@
   --gray-counter: #f6f7f8;
   --blue: #33a0ff;
   --blue-haze: #eaf5ff;
-  /* --blue-hover: #2e90e5; */
   --red: #f53848;
   --red-haze: #ffecee;
   --red-sale: #ff4858; /* $499 and "Hot" */
-  /* --red-hover: #ff4858; */
   --green: #0ad00a;
   --green-haze: #e6fae6;
-  /* --green-hover: #07c107; */
   --yellow: #ffc600;
   --yellow-haze: #fff9e5;
-  /* --yellow-hover: #ebb600; */
   --black: #22262a;
   --black-haze: #f6f7f8;
-  /* --black-hover: #13161a; */
 }
 
 /** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
@@ -65,28 +60,6 @@ button {
   border-color: var(--yellow);
 }
 
-/** Outline *************** */
-.button-outline {
-  color: var(--black);
-  background-color: transparent;
-}
-
-.button-primary-outline {
-  color: var(--blue);
-}
-
-.button-danger-outline {
-  color: var(--red);
-}
-
-.button-success-outline {
-  color: var(--green);
-}
-
-.button-warning-outline {
-  color: var(--yellow);
-}
-
 /** Haze *************** */
 .button-haze {
   color: var(--black);
@@ -110,6 +83,32 @@ button {
   color: var(--yellow);
   background-color: var(--yellow-haze);
   border-color: var(--yellow-haze);
+}
+
+/** Outline *************** */
+.button-outline {
+  color: var(--black);
+  background-color: transparent;
+}
+
+.button-primary-outline {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.button-danger-outline {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.button-success-outline {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.button-warning-outline {
+  color: var(--yellow);
+  border-color: var(--yellow);
 }
 
 /** Hover *************** */
