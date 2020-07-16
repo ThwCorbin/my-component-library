@@ -60,31 +60,6 @@ button {
   border-color: var(--yellow);
 }
 
-/** Haze *************** */
-.button-haze {
-  color: var(--black);
-  background-color: var(--black-haze);
-  border-color: var(--black-haze);
-}
-
-.button-primary-outline {
-  color: var(--blue);
-  background-color: var(--blue-haze);
-  border-color: var(--blue-haze);
-}
-
-.button-success-outline {
-  color: var(--green);
-  background-color: var(--green-haze);
-  border-color: var(--green-haze);
-}
-
-.button-warning-outline {
-  color: var(--yellow);
-  background-color: var(--yellow-haze);
-  border-color: var(--yellow-haze);
-}
-
 /** Outline *************** */
 .button-outline {
   color: var(--black);
@@ -94,21 +69,56 @@ button {
 .button-primary-outline {
   color: var(--blue);
   border-color: var(--blue);
+  background-color: transparent;
 }
 
 .button-danger-outline {
   color: var(--red);
   border-color: var(--red);
+  background-color: transparent;
 }
 
 .button-success-outline {
   color: var(--green);
   border-color: var(--green);
+  background-color: transparent;
 }
 
 .button-warning-outline {
   color: var(--yellow);
   border-color: var(--yellow);
+  background-color: transparent;
+}
+
+/** Haze *************** */
+.button-haze {
+  color: var(--black);
+  background-color: var(--black-haze);
+  border-color: var(--black-haze);
+}
+
+.button-primary-haze {
+  color: var(--blue);
+  background-color: var(--blue-haze);
+  border-color: var(--blue-haze);
+}
+
+.button-danger-haze {
+  color: var(--red);
+  background-color: var(--red-haze);
+  border-color: var(--red-haze);
+}
+
+.button-success-haze {
+  color: var(--green);
+  background-color: var(--green-haze);
+  border-color: var(--green-haze);
+}
+
+.button-warning-haze {
+  color: var(--yellow);
+  background-color: var(--yellow-haze);
+  border-color: var(--yellow-haze);
 }
 
 /** Hover *************** */

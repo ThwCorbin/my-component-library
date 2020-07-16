@@ -26,26 +26,20 @@ const Button = (props) => {
   }
 
   if (props.outline) {
-    if (types.includes(props.type)) {
-      classList += ` button-outline button-${props.type}-outline`; // Note initial empty space as we add to the string
+    if (!props.type) {
+      classList += ` button-outline`; // Note initial empty space as we add to the string
     } else {
-      classList += ` button-outline button-default-outline;`; // Note initial empty space as we add to the string
+      classList += ` button-${props.type}-outline`; // Note initial empty space as we add to the string
     }
   }
 
   if (props.haze) {
-    if (types.includes(props.type)) {
-      classList += ` button-haze button-${props.type}-haze`; // Note initial empty space as we add to the string
+    if (!props.type) {
+      classList += ` button-haze`; // Note initial empty space as we add to the string
     } else {
-      classList += ` button-haze button-default-haze;`; // Note initial empty space as we add to the string
+      classList += ` button-${props.type}-haze`; // Note initial empty space as we add to the string
     }
   }
-
-  // Add a conditional statement that checks for hover and updates the
-  // classList variable based on their existence. Use ${props.type} for this to work on multiple types
-  //   if (props.hover) {
-  //     classList += ` hover`; // Note the spacing here since we are adding to the string!
-  //   }
 
   // Button class needs a value of classList,
   // to which we add the classList string
