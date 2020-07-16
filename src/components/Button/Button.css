@@ -3,20 +3,21 @@
   --gray-filled: #fafafb;
   --gray-counter: #f6f7f8;
   --blue: #33a0ff;
-  --blue-hover: #2e90e5;
   --blue-haze: #eaf5ff;
+  /* --blue-hover: #2e90e5; */
   --red: #f53848;
-  --red-hover: #ff4858; /* this is also $499 and "Hot" */
   --red-haze: #ffecee;
+  --red-sale: #ff4858; /* $499 and "Hot" */
+  /* --red-hover: #ff4858; */
   --green: #0ad00a;
-  --green-hover: #07c107;
   --green-haze: #e6fae6;
+  /* --green-hover: #07c107; */
   --yellow: #ffc600;
-  --yellow-hover: #ebb600;
   --yellow-haze: #fff9e5;
+  /* --yellow-hover: #ebb600; */
   --black: #22262a;
-  --black-hover: #13161a;
   --black-haze: #f6f7f8;
+  /* --black-hover: #13161a; */
 }
 
 /** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
@@ -31,6 +32,14 @@ button {
   border-style: solid;
   border-radius: 3px;
   padding: 5px 20px;
+}
+
+.button-large {
+  padding: 10px 50px;
+}
+
+.button-small {
+  padding: 2px 10px;
 }
 
 .button-primary {
@@ -53,25 +62,51 @@ button {
   border-color: var(--yellow);
 }
 
-.button-large {
-  padding: 10px 50px;
-}
-
-.button-small {
-  padding: 2px 10px;
-}
-
 .button-outline {
+  color: var(--black);
   background-color: transparent;
-  color: currentColor;
+}
+
+.button-primary-outline {
+  color: var(--blue);
+}
+
+.button-danger-outline {
+  color: var(--red);
+}
+
+.button-success-outline {
+  color: var(--green);
+}
+
+.button-warning-outline {
+  color: var(--yellow);
 }
 
 .button-haze {
-  /* background-color: currentColor; */
-  opacity: 0.15;
-  /* color: currentColor; */
+  color: var(--black);
+  background-color: var(--black-haze);
+  border-color: var(--black-haze);
+}
+
+.button-primary-outline {
+  color: var(--blue);
+  background-color: var(--blue-haze);
+  border-color: var(--blue-haze);
+}
+
+.button-success-outline {
+  color: var(--green);
+  background-color: var(--green-haze);
+  border-color: var(--green-haze);
+}
+
+.button-warning-outline {
+  color: var(--yellow);
+  background-color: var(--yellow-haze);
+  border-color: var(--yellow-haze);
 }
 
 button:hover {
-  background-color: currentColor;
+  filter: brightness(0.95);
 }

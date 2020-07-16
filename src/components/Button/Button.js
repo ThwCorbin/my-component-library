@@ -26,11 +26,19 @@ const Button = (props) => {
   }
 
   if (props.outline) {
-    classList += ` button-outline`; // Note initial empty space as we add to the string
+    if (types.includes(props.type)) {
+      classList += ` button-outline button-${props.type}-outline`; // Note initial empty space as we add to the string
+    } else {
+      classList += ` button-outline button-default-outline;`; // Note initial empty space as we add to the string
+    }
   }
 
   if (props.haze) {
-    classList += ` button-haze`; // Note initial empty space as we add to the string
+    if (types.includes(props.type)) {
+      classList += ` button-haze button-${props.type}-haze`; // Note initial empty space as we add to the string
+    } else {
+      classList += ` button-haze button-default-haze;`; // Note initial empty space as we add to the string
+    }
   }
 
   // Add a conditional statement that checks for hover and updates the
