@@ -1,0 +1,45 @@
+button {
+  border-radius: 2px;
+  padding: 5px 25px;
+}
+
+.button-primary {
+  background-color: #0069d9;
+  color: white;
+  border: #0069d9;
+}
+
+.button-primary:hover {
+  background-color: #d900b5;
+  opacity: 0.5;
+}
+
+.button-primary-outline {
+  background-color: #0069d9;
+}
+
+.button-danger {
+  background-color: #cb444a;
+  color: white;
+  border: #0069d9;
+}
+
+.button-success {
+  background-color: #53a451;
+  color: white;
+  border: #0069d9;
+}
+
+.button-warning {
+  background-color: #f6c344;
+  color: white;
+  border: #0069d9;
+}
+
+.button-large {
+  padding: 10px 50px;
+}
+
+.button-small {
+  padding: 2px 10px;
+}
