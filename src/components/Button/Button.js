@@ -41,11 +41,29 @@ const Button = (props) => {
     }
   }
 
+  if (props.type === "user-input") {
+    classList += ` button-user-input`; // Note initial empty space as we add to the string
+  }
+
+  if (props.icon === "cart") {
+    classList += ` button-cart`; // Note initial empty space as we add to the string
+  }
+
+  if (props.icon === "heart") {
+    classList += ` button-heart`; // Note initial empty space as we add to the string
+  }
+
+  if (props.rectangle) {
+    classList += ` button-rectangle`; // Note initial empty space as we add to the string
+  }
+
+  if (props.square) {
+    classList += ` button-square`; // Note initial empty space as we add to the string
+  }
+
   // Button class needs a value of classList,
   // to which we add the classList string
   return <button className={classList}>{props.label}</button>;
 };
 
 export default Button;
-
-// onClick=props.whenClicked()

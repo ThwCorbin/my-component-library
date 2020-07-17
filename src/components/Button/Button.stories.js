@@ -131,4 +131,17 @@ storiesOf("Button", module)
   ))
   .add("Warning Small Haze", () => (
     <Button type="warning" small haze label="Do something" />
+  ))
+  //* User Input *************** */
+  .add("Add to Cart", () => (
+    <Button type="user-input" rectangle icon="cart" label="Add to Cart" />
+  ))
+  .add("Add to Favs", () => (
+    <Button type="user-input" rectangle icon="heart" label="Add to Favorites" />
+  ))
+  .add("Add to Cart Square", () => (
+    <Button type="user-input" square icon="cart" />
+  ))
+  .add("Add to Favs Square", () => (
+    <Button type="user-input" square icon="heart" />
   )); // storiesOf "Button"
