@@ -40,4 +40,25 @@ storiesOf("Input", module)
       label="Email"
       placeholder="Email"
     />
+  ))
+  .add("Text Button", () => (
+    <Input
+      id="form-text"
+      type="text"
+      name="text"
+      placeholder="Voucher code"
+      buttonText="Redeem"
+      action=""
+    />
+  ))
+  .add("Text Button Large", () => (
+    <Input
+      id="form-text"
+      type="text"
+      name="text"
+      large
+      placeholder="Voucher code"
+      buttonText="Redeem"
+      action=""
+    />
   )); // stories of Input

@@ -30,22 +30,54 @@ form {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.form-input-text,
+.form-input-text-large {
+  flex-direction: row;
+}
+
 label {
   font-size: 10px;
 }
 
 input {
   width: 175px;
-  height: 18px;
+  height: 24px;
   font-family: inherit;
+  font-size: 10px;
+  border: 1px solid var(--gray-border);
+  border-radius: 2px;
 }
 
 .input-medium {
-  height: 24px;
-  /* font-size: 14px; */
+  height: 28px;
+  font-size: 12px;
 }
 
 .input-large {
-  /* font-size: 14px; */
-  height: 32px;
+  height: 36px;
+  font-size: 12px;
+}
+
+.input-text {
+  width: 125px;
+  border-radius: 2px 0 0 2px;
+}
+
+.input-text-large {
+  width: 150px;
+  border-radius: 2px 0 0 2px;
+}
+
+.input-btn {
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0 2px 2px 0;
+}
+
+.input-btn-large {
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0 2px 2px 0;
 }
