@@ -48,3 +48,8 @@ select {
   border: none;
   background-color: var(--gray-filled);
 }
+
+select + svg {
+  z-index: 1;
+  margin-left: -15px;
+}

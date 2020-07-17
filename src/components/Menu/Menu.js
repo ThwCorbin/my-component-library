@@ -1,5 +1,6 @@
 import React from "react";
 import "./Menu.css";
+import ArrowDown from "../Icon/ArrowDown";
 
 const Menu = (props) => {
   let { name, options, medium, large, filled } = props;
@@ -32,6 +33,7 @@ const Menu = (props) => {
         </option>
         {/* {optionElems} */}
       </select>
+      <ArrowDown />
     </div>
   );
 }; // Menu

@@ -134,12 +134,24 @@ button {
 .button-heart {
 } */
 
-/* .button-rectangle {
-} */
+.button-rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.button-rectangle > svg {
+  margin: 0 5px;
+}
 
 .button-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
+  margin: 0;
   padding: 1px;
 }
 

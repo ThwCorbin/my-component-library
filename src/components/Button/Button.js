@@ -1,5 +1,7 @@
 import React from "react";
 import "./Button.css";
+import Heart from "../Icon/Heart";
+import Cart from "../Icon/Cart";
 
 const Button = (props) => {
   // Declare a classList variable and set it to an empty string
@@ -63,7 +65,36 @@ const Button = (props) => {
 
   // Button class needs a value of classList,
   // to which we add the classList string
-  return <button className={classList}>{props.label}</button>;
+  // If there are icons, handle first
+  if (props.icon === "heart" && props.rectangle) {
+    return (
+      <button className={classList}>
+        <Heart />
+        <span>{props.label}</span>
+      </button>
+    );
+  } else if (props.icon === "cart" && props.rectangle) {
+    return (
+      <button className={classList}>
+        <Cart />
+        <span>{props.label}</span>
+      </button>
+    );
+  } else if (props.icon === "heart") {
+    return (
+      <button className={classList}>
+        <Heart />
+      </button>
+    );
+  } else if (props.icon === "cart") {
+    return (
+      <button className={classList}>
+        <Cart />
+      </button>
+    );
+  } else {
+    return <button className={classList}>{props.label}</button>;
+  }
 };
 
 export default Button;
