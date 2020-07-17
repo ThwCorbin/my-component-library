@@ -2,22 +2,49 @@ import React from "react";
 import "./Input.css";
 
 const Input = (props) => {
-  // Declare a classList variable and set it to an empty string
+  let { id, type, name, medium, large, label, placeholder } = props;
+  let labelText = "";
+  let placeText = "";
   let classList = "";
 
-  // Array of all story/component types in the component library
-  // Default cases have no type attribute
-  let types = ["primary", "danger", "success", "warning"];
-
-  // Check if type is true and
-  // Update classList variable if not default
-  if (types.includes(props.type)) {
-    classList += ` button-${props.type}`;
+  // label is optional
+  // Check if there is a label
+  // If so, assign to labelText variable
+  if (label) {
+    labelText = label;
   }
 
-  // Button class needs a value of classList,
-  // to which we add the classList string
-  return <input className={classList}></input>;
+  // placeholder is optional
+  // Check if there is a placeholder
+  // If so, set placeText to placeholder
+  // If not, set placeText to labelText
+  if (placeholder) {
+    placeText = `  ${placeholder}`;
+  } else {
+    placeText = `  ${labelText}`;
+  }
+
+  if (props.hasOwnProperty("medium")) {
+    console.log("true yes");
+    classList += ` input-medium`; // Note space at beginning of string
+  }
+
+  if (large) {
+    classList += ` input-large`; // Note space at beginning of string
+  }
+
+  return (
+    <form>
+      <label for={id}> {labelText}</label>
+      <input
+        id={id}
+        className={classList}
+        type={type}
+        name={name}
+        placeholder={placeText}
+      />
+    </form>
+  );
 };
 
 export default Input;
