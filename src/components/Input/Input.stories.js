@@ -61,4 +61,15 @@ storiesOf("Input", module)
       buttonText="Redeem"
       action=""
     />
+  ))
+  .add("Number Counter", () => (
+    <Input
+      id="input-number-counter"
+      type="number"
+      name="counter"
+      min="0"
+      max="100"
+      step="1"
+      value="0"
+    />
   )); // stories of Input

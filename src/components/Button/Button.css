@@ -128,12 +128,6 @@ button {
   border-color: var(--blue-haze);
 }
 
-/* .button-cart {
-}
-
-.button-heart {
-} */
-
 .button-rectangle {
   display: flex;
   justify-content: center;

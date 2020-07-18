@@ -1,5 +1,7 @@
 import React from "react";
 import "./Input.css";
+import Plus from "../Icon/Plus";
+import Minus from "../Icon/Minus";
 
 const Input = (props) => {
   let {
@@ -11,12 +13,16 @@ const Input = (props) => {
     label,
     placeholder,
     buttonText,
-    action,
+    min,
+    max,
+    step,
+    value,
   } = props;
   let labelText = "";
   let placeText = "";
   let classList = "";
   let formClassList = "";
+  let numClassList = "";
   let btnClassList = "";
 
   // label is optional
@@ -58,6 +64,12 @@ const Input = (props) => {
     classList += ` input-text-large`;
   }
 
+  if (type === "number") {
+    numClassList += ` form-input-number`;
+    btnClassList += ` div-as-btn-number`;
+    classList += ` input-number`;
+  }
+
   // if (props.hasOwnProperty("medium")) {
   //   console.log("true yes");
   //   classList += ` input-medium`; // Note space at beginning of string
@@ -67,16 +79,10 @@ const Input = (props) => {
     return (
       <form>
         <label for={id}> {labelText}</label>
-        <input
-          id={id}
-          className={classList}
-          type={type}
-          name={name}
-          placeholder={placeText}
-        />
+        <input type={type} className={classList} placeholder={placeText} />
       </form>
     );
-  } else if ((type = "text")) {
+  } else if (type === "text") {
     return (
       <form className={formClassList}>
         <input
@@ -87,6 +93,27 @@ const Input = (props) => {
           placeholder={placeText}
         />
         <button className={btnClassList}>{buttonText}</button>
+      </form>
+    );
+  } else if (type === "number") {
+    return (
+      <form className={numClassList}>
+        <div className={btnClassList}>
+          <Plus />
+        </div>
+        <input
+          id={id}
+          className={classList}
+          type={type}
+          min={min}
+          max={max}
+          step={step}
+          placeholder={value}
+          name={name}
+        />
+        <div className={btnClassList}>
+          <Minus />
+        </div>
       </form>
     );
   } else {

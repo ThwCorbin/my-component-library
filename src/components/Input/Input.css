@@ -35,6 +35,14 @@ form {
   flex-direction: row;
 }
 
+.form-input-number {
+  flex-direction: row;
+  align-items: center;
+  width: 10px;
+  background-color: var(--gray-counter);
+  border-color: var(--gray-counter);
+}
+
 label {
   font-size: 10px;
 }
@@ -80,4 +88,33 @@ input {
   background-color: var(--blue);
   border: none;
   border-radius: 0 2px 2px 0;
+}
+
+/* see https://css-tricks.com/snippets/css/turn-off-number-input-spinners/ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.div-as-btn-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1px; */
+}
+
+.div-as-btn-number > svg {
+  width: 20px;
+  background-color: var(--gray-counter);
+  border-color: var(--gray-counter);
+}
+
+.input-number {
+  width: 50px;
+  appearance: none;
+  text-align: center;
+  background-color: var(--gray-counter);
 }
