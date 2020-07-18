@@ -90,30 +90,35 @@ input {
   border-radius: 0 2px 2px 0;
 }
 
+#input-number-counter {
+  border: none;
+  /* appearance: none; */
+}
+
 /* see https://css-tricks.com/snippets/css/turn-off-number-input-spinners/ */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0;
 }
 
 .div-as-btn-number {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1px; */
+  height: 24px;
+  padding: 1px;
+  background-color: var(--gray-counter);
+  border: none;
 }
 
 .div-as-btn-number > svg {
-  width: 20px;
-  background-color: var(--gray-counter);
-  border-color: var(--gray-counter);
+  margin: 10px;
 }
 
 .input-number {
-  width: 50px;
+  /* width: 50px; */
   appearance: none;
   text-align: center;
   background-color: var(--gray-counter);

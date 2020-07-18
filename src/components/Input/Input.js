@@ -4,7 +4,7 @@ import Plus from "../Icon/Plus";
 import Minus from "../Icon/Minus";
 
 const Input = (props) => {
-  let {
+  const {
     id,
     type,
     name,
@@ -13,6 +13,7 @@ const Input = (props) => {
     label,
     placeholder,
     buttonText,
+    onClick,
     min,
     max,
     step,
@@ -98,8 +99,8 @@ const Input = (props) => {
   } else if (type === "number") {
     return (
       <form className={numClassList}>
-        <div className={btnClassList}>
-          <Plus />
+        <div className={btnClassList} onClick={onClick}>
+          <Minus />
         </div>
         <input
           id={id}
@@ -111,8 +112,8 @@ const Input = (props) => {
           placeholder={value}
           name={name}
         />
-        <div className={btnClassList}>
-          <Minus />
+        <div className={btnClassList} onClick={onClick}>
+          <Plus />
         </div>
       </form>
     );

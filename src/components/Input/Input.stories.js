@@ -1,5 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+// For "action" see https://dev.to/tducasse/how-to-use-storybook-with-react-10g1
+// And see https://github.com/storybookjs/storybook/tree/master/addons/actions
+import { action } from "@storybook/addon-actions";
 import Input from "./Input";
 
 storiesOf("Input", module)
@@ -48,7 +51,7 @@ storiesOf("Input", module)
       name="text"
       placeholder="Voucher code"
       buttonText="Redeem"
-      action=""
+      onClick={action("Clicked Input")}
     />
   ))
   .add("Text Button Large", () => (
