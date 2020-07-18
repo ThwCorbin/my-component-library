@@ -18,6 +18,8 @@ const Input = (props) => {
     max,
     step,
     value,
+    checked,
+    color,
   } = props;
   let labelText = "";
   let placeText = "";
@@ -71,6 +73,11 @@ const Input = (props) => {
     classList += ` input-number`;
   }
 
+  if (type === "checkbox") {
+    formClassList += ` form-input-checkbox`;
+    classList += ` input-checkbox`;
+  }
+
   // if (props.hasOwnProperty("medium")) {
   //   console.log("true yes");
   //   classList += ` input-medium`; // Note space at beginning of string
@@ -80,7 +87,12 @@ const Input = (props) => {
     return (
       <form>
         <label for={id}> {labelText}</label>
-        <input type={type} className={classList} placeholder={placeText} />
+        <input
+          type={type}
+          name={name}
+          className={classList}
+          placeholder={placeText}
+        />
       </form>
     );
   } else if (type === "text") {
@@ -117,6 +129,22 @@ const Input = (props) => {
         </div>
       </form>
     );
+  } else if (type === "checkbox") {
+    if (checked) {
+      return (
+        <form className="form-input-checkbox">
+          <input type={type} name={name} className={classList} checked />
+          <label for={id}> {labelText}</label>
+        </form>
+      );
+    } else {
+      return (
+        <form className="form-input-checkbox">
+          <input type={type} name={name} className={classList} />
+          <label for={id}> {labelText}</label>
+        </form>
+      );
+    }
   } else {
     return null;
   }

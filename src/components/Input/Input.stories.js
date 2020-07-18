@@ -51,7 +51,6 @@ storiesOf("Input", module)
       name="text"
       placeholder="Voucher code"
       buttonText="Redeem"
-      onClick={action("Clicked Input")}
     />
   ))
   .add("Text Button Large", () => (
@@ -62,7 +61,6 @@ storiesOf("Input", module)
       large
       placeholder="Voucher code"
       buttonText="Redeem"
-      action=""
     />
   ))
   .add("Number Counter", () => (
@@ -74,5 +72,33 @@ storiesOf("Input", module)
       max="100"
       step="1"
       value="0"
+      onClick={action("Clicked Input")}
+    />
+  ))
+  .add("Checkbox", () => (
+    <Input id="form-checkbox" type="checkbox" name="checkbox" />
+  ))
+  .add("Checkbox Checked", () => (
+    <Input id="form-checkbox" type="checkbox" name="checkbox" checked />
+  ))
+  .add("Checkbox Color", () => (
+    <Input id="form-checkbox" type="checkbox" name="checkbox" color="blue" />
+  ))
+  .add("Checkbox Checked Color", () => (
+    <Input
+      id="form-checkbox"
+      type="checkbox"
+      name="checkbox"
+      checked
+      color="blue"
+    />
+  ))
+  .add("Checkbox Checked Label", () => (
+    <Input
+      id="form-checkbox"
+      type="checkbox"
+      name="checkbox"
+      checked
+      label="Don't show again"
     />
   )); // stories of Input

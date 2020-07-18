@@ -119,7 +119,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .input-number {
   /* width: 50px; */
-  appearance: none;
+  /* appearance: none; */
   text-align: center;
   background-color: var(--gray-counter);
+}
+
+.form-input-checkbox {
+  width: 40px;
+}
+
+.input-checkbox {
+  width: 20px;
+  color: red;
+  background-color: red;
+  border-color: red;
 }
