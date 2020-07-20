@@ -5,7 +5,7 @@ implement a UI for the component library.
 
 Repo: https://github.com/ThwCorbin/my-component-library
 
-Web: https://thwcorbin.github.io/my-component-library/
+Web: https://thwcorbin.github.io/my-component-library/story-build/index.html
 
 ## Description
 
