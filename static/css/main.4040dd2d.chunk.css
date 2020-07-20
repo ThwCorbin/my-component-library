@@ -1,0 +1,563 @@
+:root {
+  --white: #ffffff;
+  --gray-filled: #fafafb;
+  --gray-counter: #f6f7f8;
+  --blue: #33a0ff;
+  --blue-haze: #eaf5ff;
+  --red: #f53848;
+  --red-haze: #ffecee;
+  --red-sale: #ff4858; /* $499 and "Hot" */
+  --green: #0ad00a;
+  --green-haze: #e6fae6;
+  --yellow: #ffc600;
+  --yellow-haze: #fff9e5;
+  --black: #22262a;
+  --black-haze: #f6f7f8;
+}
+
+/** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
+
+/** Default *************** */
+button {
+  /* width: 100px; */
+  font-size: 10px;
+  color: #ffffff;
+  color: var(--white);
+  background-color: #22262a;
+  background-color: var(--black);
+  border-color: #22262a;
+  border-color: var(--black);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 5px 20px;
+}
+
+/** Large & Small *************** */
+.button-large {
+  padding: 10px 50px;
+}
+
+.button-small {
+  padding: 2px 10px;
+}
+
+/** Types *************** */
+.button-primary {
+  background-color: #33a0ff;
+  background-color: var(--blue);
+  border-color: #33a0ff;
+  border-color: var(--blue);
+}
+
+.button-danger {
+  background-color: #f53848;
+  background-color: var(--red);
+  border-color: #f53848;
+  border-color: var(--red);
+}
+
+.button-success {
+  background-color: #0ad00a;
+  background-color: var(--green);
+  border-color: #0ad00a;
+  border-color: var(--green);
+}
+
+.button-warning {
+  background-color: #ffc600;
+  background-color: var(--yellow);
+  border-color: #ffc600;
+  border-color: var(--yellow);
+}
+
+/** Outline *************** */
+.button-outline {
+  color: #22262a;
+  color: var(--black);
+  background-color: transparent;
+}
+
+.button-primary-outline {
+  color: #33a0ff;
+  color: var(--blue);
+  border-color: #33a0ff;
+  border-color: var(--blue);
+  background-color: transparent;
+}
+
+.button-danger-outline {
+  color: #f53848;
+  color: var(--red);
+  border-color: #f53848;
+  border-color: var(--red);
+  background-color: transparent;
+}
+
+.button-success-outline {
+  color: #0ad00a;
+  color: var(--green);
+  border-color: #0ad00a;
+  border-color: var(--green);
+  background-color: transparent;
+}
+
+.button-warning-outline {
+  color: #ffc600;
+  color: var(--yellow);
+  border-color: #ffc600;
+  border-color: var(--yellow);
+  background-color: transparent;
+}
+
+/** Haze *************** */
+.button-haze {
+  color: #22262a;
+  color: var(--black);
+  background-color: #f6f7f8;
+  background-color: var(--black-haze);
+  border-color: #f6f7f8;
+  border-color: var(--black-haze);
+}
+
+.button-primary-haze {
+  color: #33a0ff;
+  color: var(--blue);
+  background-color: #eaf5ff;
+  background-color: var(--blue-haze);
+  border-color: #eaf5ff;
+  border-color: var(--blue-haze);
+}
+
+.button-danger-haze {
+  color: #f53848;
+  color: var(--red);
+  background-color: #ffecee;
+  background-color: var(--red-haze);
+  border-color: #ffecee;
+  border-color: var(--red-haze);
+}
+
+.button-success-haze {
+  color: #0ad00a;
+  color: var(--green);
+  background-color: #e6fae6;
+  background-color: var(--green-haze);
+  border-color: #e6fae6;
+  border-color: var(--green-haze);
+}
+
+.button-warning-haze {
+  color: #ffc600;
+  color: var(--yellow);
+  background-color: #fff9e5;
+  background-color: var(--yellow-haze);
+  border-color: #fff9e5;
+  border-color: var(--yellow-haze);
+}
+
+/** User Input *************** */
+.button-user-input {
+  color: #33a0ff;
+  color: var(--blue);
+  background-color: #eaf5ff;
+  background-color: var(--blue-haze);
+  border-color: #eaf5ff;
+  border-color: var(--blue-haze);
+}
+
+.button-rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.button-rectangle > svg {
+  margin: 0 5px;
+}
+
+.button-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 1px;
+}
+
+/** Hover *************** */
+button:hover {
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
+}
+
+:root {
+  --white: #ffffff;
+  --gray-filled: #fafafb;
+  --gray-counter: #f6f7f8;
+  --blue: #33a0ff;
+  --blue-haze: #eaf5ff;
+  --red: #f53848;
+  --red-haze: #ffecee;
+  --red-sale: #ff4858;
+  --green: #0ad00a;
+  --green-haze: #e6fae6;
+  --yellow: #ffc600;
+  --yellow-haze: #fff9e5;
+  --black: #22262a;
+  --black-haze: #f6f7f8;
+}
+
+/** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
+
+/** Reset ###############  */
+/* * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-input-text,
+.form-input-text-large {
+  flex-direction: row;
+}
+
+.form-input-number {
+  flex-direction: row;
+  align-items: center;
+  width: 10px;
+  background-color: #f6f7f8;
+  background-color: var(--gray-counter);
+  border-color: #f6f7f8;
+  border-color: var(--gray-counter);
+}
+
+label {
+  font-size: 10px;
+}
+
+input {
+  width: 175px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 10px;
+  border: 1px solid var(--gray-border);
+  border-radius: 2px;
+}
+
+.input-medium {
+  height: 28px;
+  font-size: 12px;
+}
+
+.input-large {
+  height: 36px;
+  font-size: 12px;
+}
+
+.input-text {
+  width: 125px;
+  border-radius: 2px 0 0 2px;
+}
+
+.input-text-large {
+  width: 150px;
+  border-radius: 2px 0 0 2px;
+}
+
+.input-btn {
+  color: #ffffff;
+  color: var(--white);
+  background-color: #33a0ff;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0 2px 2px 0;
+}
+
+.input-btn-large {
+  color: #ffffff;
+  color: var(--white);
+  background-color: #33a0ff;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0 2px 2px 0;
+}
+
+#input-number-counter {
+  border: none;
+  /* appearance: none; */
+}
+
+/* see https://css-tricks.com/snippets/css/turn-off-number-input-spinners/ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.div-as-btn-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  padding: 1px;
+  background-color: #f6f7f8;
+  background-color: var(--gray-counter);
+  border: none;
+}
+
+.div-as-btn-number > svg {
+  margin: 10px;
+}
+
+.input-number {
+  text-align: center;
+  background-color: #f6f7f8;
+  background-color: var(--gray-counter);
+}
+
+.form-input-checkbox {
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+}
+
+/* See https://css-tricks.com/radio-buttons-are-like-selects-checkboxes-are-like-multiple-selects/ */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.form-div-svg {
+  display: flex;
+  justify-content: center;
+}
+
+.form-div-svg-color #checkbox {
+  stroke: #33a0ff;
+  stroke: var(--blue);
+}
+
+.form-div-svg-color-checked #checkbox {
+  stroke: #33a0ff;
+  stroke: var(--blue);
+  fill: #33a0ff;
+  fill: var(--blue);
+}
+
+.input-checkbox-label {
+  margin-left: 5px;
+}
+
+/* #checkbox {
+  stroke: var(--blue);
+  fill: var(--blue);
+} */
+
+:root {
+  --white: #ffffff;
+  --gray-filled: #fafafb;
+  --gray-border: #f1f3f4;
+  --gray-counter: #f6f7f8;
+  --blue: #33a0ff;
+  --blue-haze: #eaf5ff;
+  --red: #f53848;
+  --red-haze: #ffecee;
+  --red-sale: #ff4858;
+  --green: #0ad00a;
+  --green-haze: #e6fae6;
+  --yellow: #ffc600;
+  --yellow-haze: #fff9e5;
+  --black: #22262a;
+  --black-haze: #f6f7f8;
+}
+
+/** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
+
+/** Reset ###############  */
+/* * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+} */
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 125px;
+  height: 24px;
+  font-size: 10px;
+  border: 1px solid #f1f3f4;
+  border: 1px solid var(--gray-border);
+  border-radius: 2px;
+}
+
+.menu-medium {
+  width: 175px;
+  height: 28px;
+}
+
+.menu-large {
+  width: 175px;
+  height: 36px;
+}
+
+.menu-filled {
+  border: none;
+  background-color: #fafafb;
+  background-color: var(--gray-filled);
+}
+
+select + svg {
+  z-index: 1;
+  margin-left: -15px;
+}
+
+:root {
+  --white: #ffffff;
+  --gray-filled: #fafafb;
+  --gray-counter: #f6f7f8;
+  --gray-star: #c1c8ce;
+  --blue: #33a0ff;
+  --blue-haze: #eaf5ff;
+  --red: #f53848;
+  --red-haze: #ffecee;
+  --red-sale: #ff4858;
+  --green: #0ad00a;
+  --green-haze: #e6fae6;
+  --yellow: #ffc600;
+  --yellow-haze: #fff9e5;
+  --black: #22262a;
+  --black-haze: #f6f7f8;
+}
+
+/** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 175px;
+  border: 1px solid var(--gray-border);
+}
+
+.div-img img {
+  width: 150px;
+  margin-top: 15px;
+}
+
+.div-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-name {
+  font-size: 10px;
+}
+
+.prices {
+  display: flex;
+  font-size: 13px;
+  color: #ff4858;
+  color: var(--red-sale);
+  margin-bottom: 15px;
+}
+
+.priceGray {
+  color: #c1c8ce;
+  color: var(--gray-star);
+  text-decoration: line-through;
+}
+
+.prices p {
+  margin: 2px 3px;
+}
+
+.container-gray {
+  border-color: #fafafb;
+  border-color: var(--gray-filled);
+  background-color: #fafafb;
+  background-color: var(--gray-filled);
+}
+
+.container-horizontal {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 350px;
+}
+
+.container-horizontal > .div-details {
+  align-items: flex-start;
+}
+
+.container-horizontal > .div-details > .product-name {
+  margin-bottom: 10px;
+}
+
+.container-horizontal > .div-details > .stars {
+  margin-bottom: 10px;
+}
+
+.div-img-input > img {
+  -webkit-filter: opacity(0.05);
+          filter: opacity(0.05);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  z-index: 1;
+  margin-top: -80px;
+  margin: -80px auto 35px;
+}
+
+.container-beats {
+  flex-direction: row;
+  width: 250px;
+  border: none;
+}
+
+.container-overall-inline {
+  display: flex;
+}
+
+.container-inline {
+  align-items: flex-start;
+  height: 175px;
+}
+
+.container-inline p {
+  font-size: 10px;
+  color: #ffffff;
+  color: var(--white);
+  background-color: #ff4858;
+  background-color: var(--red-sale);
+  padding: 3px;
+  margin: 5px;
+}
+
+.container-inline > .div-img {
+  margin: 5px auto auto auto;
+}
+
+.div-details-inline {
+}
+
+
+/*# sourceMappingURL=main.4040dd2d.chunk.css.map*/
