@@ -1,27 +1,38 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+# My Component Library
 
-# My First Component Library
+This is my React component library. I use Storybook to create stories and implement a UI for the component library.
 
-We have provided the starter code for you. From here, you'll be creating your very first component library with Storybook!
+Website: https://thwcorbin.github.io/tower/
 
-## Prerequisites
+Repo: https://github.com/ThwCorbin/tower
 
-- Intro to React & React Components
+## Description
+
+My component library will help me reuse components in projects. This will help me keep my code DRY. 
+
+This game is my fifth project for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
+
+## Technologies
+
+- React
 - Storybook
+- JavaScript
+- HTML
+- CSS
 
-## Instructions
+## Installation
 
-1.  Fork and clone this repository.
-1.  Change into the new directory.
-1.  Install dependencies.
-1.  Fulfill the listed requirements.
+- Clone the repo: https://github.com/ThwCorbin/tower
 
-## Requirements
+## Usage
 
-Follow along as we create a new component library with different styles of buttons.
+- cd to the tower directory
+- open index.html in your browser(1)
 
-## [License](LICENSE)
+## License
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+[MIT](LICENSE.txt "MIT License text file")
+
+## Notes
+
+Note 1: I use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer "Live Server extension") to serve my program from my code editor, [VS Code](https://code.visualstudio.com/ "Visual Studio Code editor").
