@@ -1,0 +1,25 @@
+:root {
+  --white: #ffffff;
+  --gray-filled: #fafafb;
+  --gray-counter: #f6f7f8;
+  --blue: #33a0ff;
+  --blue-haze: #eaf5ff;
+  --red: #f53848;
+  --red-haze: #ffecee;
+  --red-sale: #ff4858;
+  --green: #0ad00a;
+  --green-haze: #e6fae6;
+  --yellow: #ffc600;
+  --yellow-haze: #fff9e5;
+  --black: #22262a;
+  --black-haze: #f6f7f8;
+}
+
+/** lvfha - Let Victoria Free Her Armies - :link :visited :focus :hover :active */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--gray-border);
+}
