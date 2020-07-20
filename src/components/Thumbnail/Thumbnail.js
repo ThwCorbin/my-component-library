@@ -6,6 +6,8 @@ import Star from "../Icon/Star";
 import StarFilled from "../Icon/StarFilled";
 import imageMacPro from "../Icon/mac-pro.png";
 import imageBeats from "../Icon/beats.png";
+import Cart from "../Icon/Cart";
+import Heart from "../Icon/Heart";
 
 const Thumbnail = (props) => {
   const { input, gray, horizontal, inline, beats } = props;
@@ -110,7 +112,7 @@ const Thumbnail = (props) => {
     );
   } else if (inline) {
     return (
-      <div>
+      <div className="container-overall-inline">
         <div className={classListContainer}>
           <div className="div-hot">
             <p>HOT</p>
@@ -120,18 +122,39 @@ const Thumbnail = (props) => {
           </div>
         </div>
 
-        <div className="div-details">
+        <div className="div-details div-details-inline">
           <h5 className="product-name">Apple MacBook Pro</h5>
-          <div className="stars">
-            <StarFilled />
-            <StarFilled />
-            <StarFilled />
-            <StarFilled />
-            <Star />
+          <div className="inline-details-stars-reviews">
+            <div className="stars">
+              <StarFilled />
+              <StarFilled />
+              <StarFilled />
+              <StarFilled />
+              <Star />
+            </div>
+            <p className="reviews">0 reviews</p>
+            <p className="reviews-submit">Submit a review</p>
           </div>
           <div className="prices">
             <p className="priceRed">$499</p>
             <p className="priceGray">$599</p>
+          </div>
+          <div className="div-sales-text">
+            <p className="p-sales-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor.
+            </p>
+          </div>
+          <div className="div-buttons">
+            <button className="div-button-rectangle-cart">
+              <Cart />
+              <span>Add to favorites</span>
+            </button>
+            <button className="div-button-square-heart">
+              <Heart />
+            </button>
           </div>
         </div>
       </div>

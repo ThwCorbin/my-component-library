@@ -100,3 +100,94 @@
   width: 250px;
   border: none;
 }
+
+.container-overall-inline {
+  display: flex;
+}
+
+.container-inline {
+  align-items: flex-start;
+  height: 175px;
+}
+
+.container-inline p {
+  font-size: 10px;
+  color: var(--white);
+  background-color: var(--red-sale);
+  padding: 3px;
+  margin: 5px;
+}
+
+.container-inline > .div-img {
+  margin: 5px auto auto auto;
+}
+
+.div-details-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  margin-left: 25px;
+}
+
+.div-details-inline > .product-name {
+  margin: 0;
+}
+
+.inline-details-stars-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 175px;
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+.reviews {
+  color: var(--gray-star);
+}
+
+.reviews-submit {
+  color: var(--blue);
+}
+
+.div-details-inline > .prices {
+  margin: 10px 0 0 0;
+}
+
+.p-sales-text {
+  font-size: 8px;
+  line-height: 2;
+}
+
+.div-buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.div-button-rectangle-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  color: var(--blue);
+  background-color: var(--blue-haze);
+  border-color: var(--blue-haze);
+}
+
+.div-button-rectangle-cart > svg {
+  margin: 0 5px;
+}
+
+.div-button-square-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: var(--blue);
+  background-color: var(--blue-haze);
+  border-color: var(--blue-haze);
+  margin: 0 0 0 5px;
+  padding: 1px;
+}
