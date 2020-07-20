@@ -136,9 +136,18 @@ input[type="checkbox"] {
   display: none;
 }
 
-.div-input-svg {
+.form-div-svg {
   display: flex;
   justify-content: center;
+}
+
+.form-div-svg-color #checkbox {
+  stroke: var(--blue);
+}
+
+.form-div-svg-color-checked #checkbox {
+  stroke: var(--blue);
+  fill: var(--blue);
 }
 
 .input-checkbox-label {
@@ -147,4 +156,5 @@ input[type="checkbox"] {
 
 /* #checkbox {
   stroke: var(--blue);
+  fill: var(--blue);
 } */

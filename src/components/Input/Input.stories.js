@@ -82,16 +82,10 @@ storiesOf("Input", module)
     <Input id="form-checkbox" type="checkbox" name="checkbox" checked />
   ))
   .add("Checkbox Color", () => (
-    <Input id="form-checkbox" type="checkbox" name="checkbox" color="#33a0ff" />
+    <Input id="form-checkbox" type="checkbox" name="checkbox" color />
   ))
   .add("Checkbox Checked Color", () => (
-    <Input
-      id="form-checkbox"
-      type="checkbox"
-      name="checkbox"
-      checked
-      color="#33a0ff"
-    />
+    <Input id="form-checkbox" type="checkbox" name="checkbox" checked color />
   ))
   .add("Checkbox Checked Label", () => (
     <Input

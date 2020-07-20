@@ -29,8 +29,8 @@ const Input = (props) => {
   let formClassList = "";
   let numClassList = "";
   let btnClassList = "";
+  let divSVGClassList = "";
   let labelClassList = "";
-  let stroke = "";
 
   // let callbackSVG = (dataFromSVG) => {
   // 	console.log(dataFromSVG);
@@ -84,16 +84,19 @@ const Input = (props) => {
   if (type === "checkbox") {
     formClassList += ` form-input-checkbox`;
     classList += ` input-checkbox`;
+    divSVGClassList += ` form-div-svg`;
+  }
+
+  if (type === "checkbox" && color) {
+    divSVGClassList += ` form-div-svg-color`;
+  }
+
+  if (type === "checkbox" && color && checked) {
+    divSVGClassList += ` form-div-svg-color-checked`;
   }
 
   if (type === "checkbox" && label) {
     labelClassList += ` input-checkbox-label`;
-  }
-
-  if (color) {
-    stroke = color;
-  } else {
-    stroke = "22262a";
   }
 
   // if (props.hasOwnProperty("medium")) {
@@ -151,15 +154,10 @@ const Input = (props) => {
     if (checked) {
       return (
         <form className="form-input-checkbox">
-          <input
-            type={type}
-            name={name}
-            className={classList}
-            checked
-            stroke={color}
-          />
-          <div class="div-input-svg">
-            <CheckboxChecked stroke={stroke} />
+          <input type={type} name={name} className={classList} checked />
+          <div className={divSVGClassList}>
+            <CheckboxChecked />
+            {/* <CheckboxChecked stroke={stroke} /> */}
           </div>
           <label className={labelClassList} for={id}>
             {" "}
@@ -171,8 +169,9 @@ const Input = (props) => {
       return (
         <form className="form-input-checkbox">
           <input type={type} name={name} className={classList} />
-          <div class="div-input-svg">
-            <Checkbox stroke={stroke} />
+          <div className={divSVGClassList}>
+            <Checkbox />
+            {/* <Checkbox stroke={stroke} /> */}
           </div>
           <label className={labelClassList} for={id}>
             {" "}
