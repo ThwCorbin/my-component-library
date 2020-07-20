@@ -6,8 +6,9 @@ import Star from "../Icon/Star";
 import StarFilled from "../Icon/StarFilled";
 import imageMacPro from "../Icon/mac-pro.png";
 import imageBeats from "../Icon/beats.png";
-import Cart from "../Icon/Cart";
-import Heart from "../Icon/Heart";
+// import Cart from "../Icon/Cart";
+// import Heart from "../Icon/Heart";
+import Button from "../Button/Button";
 
 const Thumbnail = (props) => {
   const { input, gray, horizontal, inline, beats } = props;
@@ -148,13 +149,21 @@ const Thumbnail = (props) => {
             </p>
           </div>
           <div className="div-buttons">
-            <button className="div-button-rectangle-cart">
+            <Button
+              type="user-input"
+              rectangle
+              icon="cart"
+              label="Add to Cart"
+            />
+            <Button type="user-input" square icon="heart" />
+            {/* <button className="div-button-rectangle-cart">
               <Cart />
               <span>Add to favorites</span>
             </button>
             <button className="div-button-square-heart">
               <Heart />
-            </button>
+
+            </button> */}
           </div>
         </div>
       </div>
@@ -184,16 +193,3 @@ const Thumbnail = (props) => {
   } // default else
 };
 export default Thumbnail;
-
-{
-  /* <div>
-<Actions />
-<ActionsClear />
-
-<CartCircle />
-<HeartCircle />
-
-<img src={imageMacProGray} alt="MacBook Pro" />
-<img src={imageBeats} alt="Beats Solo 2" />
-</div> */
-}

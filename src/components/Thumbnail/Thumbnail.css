@@ -165,7 +165,11 @@
   margin-top: 10px;
 }
 
-.div-button-rectangle-cart {
+.div-buttons > .button-rectangle {
+  margin-right: 10px;
+}
+
+/* .div-button-rectangle-cart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,9 +181,9 @@
 
 .div-button-rectangle-cart > svg {
   margin: 0 5px;
-}
+} */
 
-.div-button-square-heart {
+/* .div-button-square-heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,4 +194,4 @@
   border-color: var(--blue-haze);
   margin: 0 0 0 5px;
   padding: 1px;
-}
+} */
