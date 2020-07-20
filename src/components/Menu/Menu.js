@@ -28,7 +28,7 @@ const Menu = (props) => {
   return (
     <div>
       <select required className={classList} name={name}>
-        <option value="" disabled selected hidden>
+        <option value="" disabled hidden>
           {selectText}
         </option>
         {/* {optionElems} */}

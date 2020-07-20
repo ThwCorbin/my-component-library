@@ -107,7 +107,7 @@ const Input = (props) => {
   if (type === "email") {
     return (
       <form>
-        <label for={id}> {labelText}</label>
+        <label htmlFor={id}> {labelText}</label>
         <input
           type={type}
           name={name}
@@ -159,7 +159,7 @@ const Input = (props) => {
             <CheckboxChecked />
             {/* <CheckboxChecked stroke={stroke} /> */}
           </div>
-          <label className={labelClassList} for={id}>
+          <label className={labelClassList} htmlFor={id}>
             {" "}
             {labelText}
           </label>
@@ -173,7 +173,7 @@ const Input = (props) => {
             <Checkbox />
             {/* <Checkbox stroke={stroke} /> */}
           </div>
-          <label className={labelClassList} for={id}>
+          <label className={labelClassList} htmlFor={id}>
             {" "}
             {labelText}
           </label>
