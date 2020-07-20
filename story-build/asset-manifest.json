@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.faefa259.chunk.css",
+    "main.js": "/main.ba5233de56c319911a94.bundle.js",
+    "main.css.map": "/static/css/main.faefa259.chunk.css.map",
+    "main.js.map": "/main.ba5233de56c319911a94.bundle.js.map",
+    "runtime~main.js": "/runtime~main.ba5233de56c319911a94.bundle.js",
+    "runtime~main.js.map": "/runtime~main.ba5233de56c319911a94.bundle.js.map",
+    "vendors~main.js": "/vendors~main.ba5233de56c319911a94.bundle.js",
+    "vendors~main.js.map": "/vendors~main.ba5233de56c319911a94.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.354624bddd6d6b87d3a9477a35f191b5.js": "/precache-manifest.354624bddd6d6b87d3a9477a35f191b5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/beats.png": "/static/media/beats.46ac6c9e.png",
+    "static/media/mac-pro.png": "/static/media/mac-pro.88620912.png",
+    "vendors~main.ba5233de56c319911a94.bundle.js.LICENSE.txt": "/vendors~main.ba5233de56c319911a94.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.ba5233de56c319911a94.bundle.js",
+    "vendors~main.ba5233de56c319911a94.bundle.js",
+    "static/css/main.faefa259.chunk.css",
+    "main.ba5233de56c319911a94.bundle.js"
+  ]
+}

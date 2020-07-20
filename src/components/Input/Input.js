@@ -154,7 +154,7 @@ const Input = (props) => {
     if (checked) {
       return (
         <form className="form-input-checkbox">
-          <input type={type} name={name} className={classList} checked />
+          <input type={type} name={name} className={classList} />
           <div className={divSVGClassList}>
             <CheckboxChecked />
             {/* <CheckboxChecked stroke={stroke} /> */}
