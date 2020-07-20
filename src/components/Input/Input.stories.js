@@ -72,7 +72,7 @@ storiesOf("Input", module)
       max="100"
       step="1"
       value="0"
-      onClick={action("Clicked Input")}
+      // onClick={action("Clicked Input")}
     />
   ))
   .add("Checkbox", () => (
