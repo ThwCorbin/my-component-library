@@ -118,19 +118,33 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .input-number {
-  /* width: 50px; */
-  /* appearance: none; */
   text-align: center;
   background-color: var(--gray-counter);
 }
 
 .form-input-checkbox {
-  width: 40px;
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
 }
 
-.input-checkbox {
-  width: 20px;
-  color: red;
-  background-color: red;
-  border-color: red;
+/* See https://css-tricks.com/radio-buttons-are-like-selects-checkboxes-are-like-multiple-selects/ */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: none;
 }
+
+.div-input-svg {
+  display: flex;
+  justify-content: center;
+}
+
+.input-checkbox-label {
+  margin-left: 5px;
+}
+
+/* #checkbox {
+  stroke: var(--blue);
+} */

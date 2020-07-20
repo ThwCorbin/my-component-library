@@ -2,6 +2,8 @@ import React from "react";
 import "./Input.css";
 import Plus from "../Icon/Plus";
 import Minus from "../Icon/Minus";
+import Checkbox from "../Icon/Checkbox";
+import CheckboxChecked from "../Icon/CheckboxChecked";
 
 const Input = (props) => {
   const {
@@ -27,6 +29,12 @@ const Input = (props) => {
   let formClassList = "";
   let numClassList = "";
   let btnClassList = "";
+  let labelClassList = "";
+  let stroke = "";
+
+  // let callbackSVG = (dataFromSVG) => {
+  // 	console.log(dataFromSVG);
+  // };
 
   // label is optional
   // Check if there is a label
@@ -76,6 +84,16 @@ const Input = (props) => {
   if (type === "checkbox") {
     formClassList += ` form-input-checkbox`;
     classList += ` input-checkbox`;
+  }
+
+  if (type === "checkbox" && label) {
+    labelClassList += ` input-checkbox-label`;
+  }
+
+  if (color) {
+    stroke = color;
+  } else {
+    stroke = "22262a";
   }
 
   // if (props.hasOwnProperty("medium")) {
@@ -133,15 +151,33 @@ const Input = (props) => {
     if (checked) {
       return (
         <form className="form-input-checkbox">
-          <input type={type} name={name} className={classList} checked />
-          <label for={id}> {labelText}</label>
+          <input
+            type={type}
+            name={name}
+            className={classList}
+            checked
+            stroke={color}
+          />
+          <div class="div-input-svg">
+            <CheckboxChecked stroke={stroke} />
+          </div>
+          <label className={labelClassList} for={id}>
+            {" "}
+            {labelText}
+          </label>
         </form>
       );
     } else {
       return (
         <form className="form-input-checkbox">
           <input type={type} name={name} className={classList} />
-          <label for={id}> {labelText}</label>
+          <div class="div-input-svg">
+            <Checkbox stroke={stroke} />
+          </div>
+          <label className={labelClassList} for={id}>
+            {" "}
+            {labelText}
+          </label>
         </form>
       );
     }

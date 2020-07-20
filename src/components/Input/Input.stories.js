@@ -67,7 +67,7 @@ storiesOf("Input", module)
     <Input
       id="input-number-counter"
       type="number"
-      name="counter"
+      name="input-number-counter"
       min="0"
       max="100"
       step="1"
@@ -82,7 +82,7 @@ storiesOf("Input", module)
     <Input id="form-checkbox" type="checkbox" name="checkbox" checked />
   ))
   .add("Checkbox Color", () => (
-    <Input id="form-checkbox" type="checkbox" name="checkbox" color="blue" />
+    <Input id="form-checkbox" type="checkbox" name="checkbox" color="#33a0ff" />
   ))
   .add("Checkbox Checked Color", () => (
     <Input
@@ -90,7 +90,7 @@ storiesOf("Input", module)
       type="checkbox"
       name="checkbox"
       checked
-      color="blue"
+      color="#33a0ff"
     />
   ))
   .add("Checkbox Checked Label", () => (
